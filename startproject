@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+docker compose run --rm projects django-admin startproject "$1"
+cp -rT .projectfiles "$1"
+cd "$1"
+docker compose build

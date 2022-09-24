@@ -1,0 +1,10 @@
+*
+!.projectfiles
+!.dockerignore
+!.gitignore
+!docker-compose.yml
+!Dockerfile
+!requirements.txt
+!startproject
+!LICENSE
+!README.md
