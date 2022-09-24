@@ -5,7 +5,7 @@ services:
     volumes:
       - .:/code
     ports:
-      - "${DEV_PORT}:${DEV_PORT}"
+      - "${DEV_PORT}:8000"
     depends_on:
       - db
     restart: unless-stopped

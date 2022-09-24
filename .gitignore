@@ -1,5 +1,6 @@
 *
 !.projectfiles
+!.projectfiles/*
 !.dockerignore
 !.gitignore
 !docker-compose.yml
