@@ -41,3 +41,18 @@ This does the following:
     docker compose exec web bash
     python manage.py startapp polls
     ```
+
+#### Using dj
+
+`python manage.py` as been compressed into a single command `dj`. As such you can call the above commands like:
+
+```bash
+docker compose exec web dj startapp polls
+```
+
+or
+
+```bash
+docker compose exec web bash
+dj startapp polls
+```
