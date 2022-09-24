@@ -1,6 +1,6 @@
 # django projects
 
-Create django projects without install python on the host system.
+Create django projects without installing python and dependencies on the host system.
 
 ## Prerequisites
 
