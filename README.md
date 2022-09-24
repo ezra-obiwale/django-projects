@@ -1,6 +1,6 @@
-# django projects
+# Django projects
 
-Create django projects without installing python and dependencies on the host system.
+Create Django projects without installing python and dependencies on the host system.
 
 ## Prerequisites
 
@@ -22,10 +22,12 @@ docker compose build
 
 This does the following:
 
-- creates the "example" django project
+- creates the "example" Django project
 - creates necessary docker files including a postgres database compose service.
 - changes into the project directory
 - builds the projects docker image
+
+> Follow the instructions at the end of the operation to complete the project setup.
 
 ### Working on the project
 

@@ -7,3 +7,27 @@ cp -rT .projectfiles "$1"
 cd "$1"
 mv .env.local .env
 docker compose build
+
+echo ===================
+echo Project created OK.
+echo ===================
+echo
+echo To finish setup up, activate the use of the \".env\" variables:
+echo
+echo "1. Add the following to the beginning of $1/$1/settings.py, just after the comments:
+
+from dotenv import load_dotenv
+load_dotenv()"
+echo
+echo "2. Still in $1/$1/settings.py, change the following:
+
+SECRET_KEY = os.environ.get('SECRET_KEY')
+DEBUG = os.environ.get('DEBUG')"
+echo
+echo "3. Update the values in $1/$1/.env"
+echo
+echo ===================
+echo Start project
+echo ===================
+
+echo Run \"docker compose up -d\" to start the project
